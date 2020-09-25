@@ -43,6 +43,7 @@ namespace Gopher
 			{
 				return "\nDid not find anything :(\n";
 			}
+
 			else
 			{
 				return findings;
@@ -57,8 +58,10 @@ namespace Gopher
 				string findings = DigLikeThereIsNoTomorrow();
 				Console.Write(banner + findings);
 				Console.WriteLine("Finished! Returning to my hole.");
-			} catch (Exception ex)
-            {
+			}
+
+			catch (Exception ex)
+			{
 				Console.WriteLine(ex.Message);
 				Console.WriteLine(ex.StackTrace);
 			}
