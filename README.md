@@ -23,7 +23,7 @@ Digs the following holes:
 * VNC settings
 * TeamViewer settings
 
-#Detection
+# Detection
 Consider placing SACLs to specific registry keys with the use of [Set-AuditRule](https://github.com/OTRF/Set-AuditRule)
 
 
