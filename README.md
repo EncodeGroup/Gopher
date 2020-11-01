@@ -22,6 +22,7 @@ Digs the following holes:
 * FileZilla sessions
 * VNC settings
 * TeamViewer settings
+* PulseSecure Stored Password
 
 # Detection
 Consider placing SACLs to specific registry keys with the use of [Set-AuditRule](https://github.com/OTRF/Set-AuditRule)
