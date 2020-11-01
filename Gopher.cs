@@ -38,6 +38,7 @@ namespace Gopher
 			findings += FileZilla.Dig(isHighIntegrity);
 			findings += VNC.Dig(isHighIntegrity);
 			findings += TeamViewer.Dig();
+		    findings += PulseSecure.Dig();
 
 			if (string.IsNullOrEmpty(findings))
 			{
@@ -57,7 +58,7 @@ namespace Gopher
 				string banner = Banner();
 				string findings = DigLikeThereIsNoTomorrow();
 				Console.Write(banner + findings);
-				Console.WriteLine("Finished! Returning to my hole.");
+				Console.WriteLine("\nFinished! Returning to my hole.");
 			}
 
 			catch (Exception ex)
