@@ -28,8 +28,8 @@ namespace Gopher
 					files.AddRange(FindFiles(directory, pattern));
 				}
 			}
-
 			catch (Exception) { }
+
 			return files;
 		}
 

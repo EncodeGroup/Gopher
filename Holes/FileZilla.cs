@@ -50,13 +50,11 @@ namespace Gopher.Holes
 										{
 											findings += string.Format("|   Password : {0}\n", Encoding.UTF8.GetString(Convert.FromBase64String(password.InnerText)));
 										}
-
 										else
 										{
 											findings += "|   Password : Saved in session, but master password prevents plaintext recovery\n";
 										}
 									}
-
 									else
 									{
 										findings += string.Format("|   Password : {0}\n", password.InnerText);
@@ -108,13 +106,11 @@ namespace Gopher.Holes
 									{
 										findings += string.Format("|   Password : {0}\n", Encoding.UTF8.GetString(Convert.FromBase64String(password.InnerText)));
 									}
-
 									else
 									{
 										findings += "|   Password : Saved in session, but master password prevents plaintext recovery\n";
 									}
 								}
-
 								else
 								{
 									findings += string.Format("|   Password : {0}\n", password.InnerText);

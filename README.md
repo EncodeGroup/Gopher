@@ -1,6 +1,6 @@
 # Gopher
 
-If a credential is there... Gopher will find it
+If a credential is there... Gopher will find it!
 
 Will search for low hanging fruits and useful information for escalation on a compromised workstation.
 
@@ -22,11 +22,10 @@ Digs the following holes:
 * FileZilla sessions
 * VNC settings
 * TeamViewer settings
-* PulseSecure Stored Password
+* PulseSecure saved passwords
 
 # Detection
 Consider placing SACLs to specific registry keys with the use of [Set-AuditRule](https://github.com/OTRF/Set-AuditRule)
-
 
 # Author
 [@eksperience](https://github.com/eksperience)
