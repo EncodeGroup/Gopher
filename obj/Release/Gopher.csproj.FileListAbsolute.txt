@@ -1,0 +1,6 @@
+C:\Users\User\Downloads\Gopher-master\Gopher-master\obj\Release\Gopher.csprojAssemblyReference.cache
+C:\Users\User\Downloads\Gopher-master\Gopher-master\obj\Release\Gopher.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\Gopher-master\Gopher-master\bin\Release\Gopher.exe
+C:\Users\User\Downloads\Gopher-master\Gopher-master\bin\Release\Gopher.pdb
+C:\Users\User\Downloads\Gopher-master\Gopher-master\obj\Release\Gopher.exe
+C:\Users\User\Downloads\Gopher-master\Gopher-master\obj\Release\Gopher.pdb
