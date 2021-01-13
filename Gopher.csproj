@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,6 +46,7 @@
     <Compile Include="Holes\AWS.cs" />
     <Compile Include="Holes\Azure.cs" />
     <Compile Include="Holes\GCP.cs" />
+    <Compile Include="Holes\PulseSecure.cs" />
     <Compile Include="Holes\VNC.cs" />
     <Compile Include="Holes\FileZilla.cs" />
     <Compile Include="Holes\GPP.cs" />
