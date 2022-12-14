@@ -39,7 +39,12 @@ namespace Gopher.Holes
 							foreach (XmlNode server in servers)
 							{
 								findings += string.Format("|\n|   Server   : {0}:{1}\n", server.SelectSingleNode("Host").InnerText, server.SelectSingleNode("Port").InnerText);
-								findings += string.Format("|   Username : {0}\n", server.SelectSingleNode("User").InnerText);
+
+								if (server.SelectSingleNode("User") != null)
+                                {
+									findings += string.Format("|   Username : {0}\n", server.SelectSingleNode("User").InnerText);
+								}
+								//findings += string.Format("|   Username : {0}\n", server.SelectSingleNode("User").InnerText);
 								XmlNode password = server.SelectSingleNode("Pass");
 
 								if (password != null)
@@ -95,7 +100,11 @@ namespace Gopher.Holes
 						foreach (XmlNode server in servers)
 						{
 							findings += string.Format("|\n|   Server   : {0}:{1}\n", server.SelectSingleNode("Host").InnerText, server.SelectSingleNode("Port").InnerText);
-							findings += string.Format("|   Username : {0}\n", server.SelectSingleNode("User").InnerText);
+							if (server.SelectSingleNode("User") != null)
+							{
+								findings += string.Format("|   Username : {0}\n", server.SelectSingleNode("User").InnerText);
+							}
+							//findings += string.Format("|   Username : {0}\n", server.SelectSingleNode("User").InnerText);
 							XmlNode password = server.SelectSingleNode("Pass");
 
 							if (password != null)
